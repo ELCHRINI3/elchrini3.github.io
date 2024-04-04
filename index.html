@@ -53,12 +53,13 @@
       margin: 0;
       text-align: center;
       font-size: 20px;
-      margin-bottom: 15px; /* Aumento del espaciado entre jornada y partidos */
+      margin-bottom: 10px;
     }
     .partido {
       margin-bottom: 15px;
       text-align: center;
-      font-size: 20px;
+      font-size: 30px;
+      font-family: Monaco, monospace;
     }
     .partido:last-child {
       margin-bottom: 0;
@@ -66,6 +67,18 @@
     .descansa {
       font-weight: bold;
       color: #888;
+    }
+    .equipo {
+      font-weight: bold;
+    }
+    .numero-verde {
+      color: green;
+    }
+    .numero-rojo {
+      color: red;
+    }
+    .resultado {
+      font-weight: bold;
     }
   </style>
 </head>
@@ -90,8 +103,8 @@
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>BOCADILLO</td>
+        <td class="numero-verde">1</td>
+        <td class="equipo">BOCADILLO</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -101,7 +114,7 @@
       </tr>
       <tr>
         <td>2</td>
-        <td>CHRINI</td>
+        <td class="equipo">CARNAL</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -111,7 +124,7 @@
       </tr>
       <tr>
         <td>3</td>
-        <td>CRISKO</td>
+        <td class="equipo">CHRINI</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -121,7 +134,7 @@
       </tr>
       <tr>
         <td>4</td>
-        <td>RONY</td>
+        <td class="equipo">CRISKO</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -131,7 +144,17 @@
       </tr>
       <tr>
         <td>5</td>
-        <td>YULS</td>
+        <td class="equipo">RONY</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td class="numero-rojo">6</td>
+        <td class="equipo">YULS</td>
         <td>0</td>
         <td>0</td>
         <td>0</td>
@@ -146,36 +169,37 @@
   <div class="jornadas">
     <div class="jornada">
       <h3>JORNADA 1</h3>
-      <div class="partido">BOCADILLO VS RONY</div>
-      <div class="partido">YULS VS CRISKO</div>
-      <div class="partido"><span class="descansa">CHRINI - DESCANSA</span></div>
+      <div class="partido">CARNAL <span class="resultado">X - X</span> CRISKO</div>
+      <div class="partido">RONY <span class="resultado">X - X</span> BOCADILLO</div>
+      <div class="partido">YULS <span class="resultado">X - X</span> CHRINI</div>
     </div>
     <div class="jornada">
       <h3>JORNADA 2</h3>
-      <div class="partido">BOCADILLO VS YULS</div>
-      <div class="partido">CRISKO VS CHRINI</div>
-      <div class="partido"><span class="descansa">RONY - DESCANSA</span></div>
+      <div class="partido">CARNAL <span class="resultado">X - X</span> RONY</div>
+      <div class="partido">BOCADILLO <span class="resultado">X - X</span> YULS</div>
+      <div class="partido">CRISKO <span class="resultado">X - X</span> CHRINI</div>
     </div>
     <div class="jornada">
       <h3>JORNADA 3</h3>
-      <div class="partido">BOCADILLO VS CHRINI</div>
-      <div class="partido">RONY VS YULS</div>
-      <div class="partido"><span class="descansa">CRISKO - DESCANSA</span></div>
+      <div class="partido">CARNAL <span class="resultado">X - X</span> YULS</div>
+      <div class="partido">CHRINI <span class="resultado">X - X</span> RONY</div>
+      <div class="partido">BOCADILLO <span class="resultado">X - X</span> CRISKO</div>
     </div>
     <div class="jornada">
       <h3>JORNADA 4</h3>
-      <div class="partido">BOCADILLO VS CRISKO</div>
-      <div class="partido">CHRINI VS RONY</div>
-      <div class="partido"><span class="descansa">YULS - DESCANSA</span></div>
+      <div class="partido">CARNAL <span class="resultado">X - X</span> CHRINI</div>
+      <div class="partido">YULS <span class="resultado">X - X</span> BOCADILLO</div>
+      <div class="partido">RONY <span class="resultado">X - X</span> CRISKO</div>
     </div>
     <div class="jornada">
       <h3>JORNADA 5</h3>
-      <div class="partido">BOCADILLO VS CHRINI</div>
-      <div class="partido">YULS VS RONY</div>
-      <div class="partido"><span class="descansa">CRISKO - DESCANSA</span></div>
+      <div class="partido">CARNAL <span class="resultado">X - X</span> BOCADILLO</div>
+      <div class="partido">RONY <span class="resultado">X - X</span> CHRINI</div>
+      <div class="partido">YULS <span class="resultado">X - X</span> CRISKO</div>
     </div>
   </div>
 </div>
 
 </body>
 </html>
+
